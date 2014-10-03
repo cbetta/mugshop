@@ -1,0 +1,33 @@
+<h2>Transactions</h2>
+<table class='table table-striped'>
+  <tr>
+    <th>
+      ID
+    </th>
+    <th>
+      Date
+    </th>
+    <th>
+      Amount
+    </th>
+    <th>
+      Status
+    </th>
+  </tr>
+<%= customer.transactions.each do |transaction| %>
+  <tr>
+    <td>
+      <%= transaction.id %>
+    </td>
+    <td>
+      <%= transaction.created_at %>
+    </td>
+    <td>
+      <%= number_to_currency transaction.amount %>
+    </td>
+    <td>
+      <%= transaction.status %>
+    </td>
+  </tr>
+<% end %>
+</table>

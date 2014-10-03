@@ -1,0 +1,5 @@
+<div class='row mugs'>
+<% @vikings.each do |i| %>
+  <%= render partial: 'entry', locals: { type: 'vikings', id: i, price: 9.99 } %>
+<% end %>
+</div>

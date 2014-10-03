@@ -1,0 +1,14 @@
+<h1>Log in</h1>
+<%= form_tag "/session", method: :post do %>
+  <div>
+    <%= label_tag "First name" %>
+    <%= text_field_tag :first_name %>
+  </div>
+  <div>
+    <%= label_tag "Last name" %>
+    <%= text_field_tag :last_name %>
+  </div>
+  <div>
+    <%= submit_tag "Submit", class: 'btn' %>
+  </div>
+<% end %>
