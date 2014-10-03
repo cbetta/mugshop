@@ -1,0 +1,33 @@
+.mugs {
+  &> div {
+    margin-bottom: 30px;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 100;
+    width: 35%;
+    top: 30%;
+    left: 20%;
+    -webkit-mask-box-image: url(label.png);
+  }
+
+  .actions {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .btn {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FEDEA2), color-stop(100%, #FFB94F));
+      color: #14406C;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 100px;
+}

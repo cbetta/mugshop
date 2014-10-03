@@ -1,0 +1,5 @@
+<div class='row mugs'>
+<% @llamas.each do |i| %>
+  <%= render partial: 'entry', locals: { type: 'llamas', id: i, price: 9.99 } %>
+<% end %>
+</div>
