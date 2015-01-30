@@ -50,6 +50,7 @@
           <ul class="nav navbar-nav">
             <li <%= active_class('llamas') %>><%= link_to "Llamas", "/llamas" %></li>
             <li <%= active_class('vikings') %>><%= link_to "Vikings", "/vikings" %></li>
+            <li <%= active_class('vikings') %>><%= link_to "Art", "/asciis" %></li>
             <li <%= active_class('artisans') %>><%= link_to "Sale", "/artisans" %></li>
           </ul>
           <%= link_to "Log out", :session, method: :delete, class: "btn btn-default navbar-btn navbar-right" if logged_in? %>

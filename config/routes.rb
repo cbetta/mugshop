@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :llamas
   resources :vikings
   resources :artisans
+  resources :asciis
 
   root "llamas#index"
 end
